@@ -1,0 +1,21 @@
+{
+    "name": "isaacdew/laravel-fortify-multitenancy",
+    "description": "A package that makes it easy to setup subdomain based multitenancy with Laravel Fotify.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Isaacdew\\LaravelFortifyMultitenancy\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Isaac Dew",
+            "email": "info@isaacdew.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "10.0.x-dev"
+    }
+}
