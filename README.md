@@ -9,7 +9,7 @@ Add the `SetTenant` middleware to the top of the `$middleware` property in your 
 ```php
 namespace App\Http;
 
-use App\Http\Middleware\SetTenant;
+use Isaacdew\LaravelFortifyMultitenancy\SetTenant;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel

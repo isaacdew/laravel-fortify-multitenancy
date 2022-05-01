@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace Isaacdew\LaravelFortifyMultitenancy;
 
 use App\Models\Tenant;
 use Closure;
