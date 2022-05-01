@@ -25,11 +25,13 @@ class TenantServiceProvider extends ServiceProvider
 
         Fortify::authenticateUsing(function (Request $request) {
             $user = User::where('email', $request->email)
-                ->when(config('tenant.id'), fn($query) => $query->where('tenant_id', config('tenant.id')))
+                ->when(!config('tenant.id'), fn ($query) => $query->whereNull('tenant_id'))
                 ->first();
-    
-            if ($user &&
-                Hash::check($request->password, $user->password)) {
+
+            if (
+                $user &&
+                Hash::check($request->password, $user->password)
+            ) {
                 return $user;
             }
         });
