@@ -4,6 +4,8 @@ namespace Isaacdew\LaravelFortifyMultitenancy;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Fortify\Fortify;
+use Illuminate\Http\Request;
+
 class TenantServiceProvider extends ServiceProvider
 {
     /**
