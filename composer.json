@@ -1,6 +1,6 @@
 {
     "name": "isaacdew/laravel-fortify-multitenancy",
-    "description": "A package that makes it easy to setup subdomain-based multitenancy with Laravel Fotify.",
+    "description": "A package that makes it easy to setup subdomain-based multitenancy with Laravel Fortify.",
     "keywords": ["laravel", "multitenant", "laravel-fortify"],
     "type": "library",
     "license": "MIT",
