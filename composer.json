@@ -9,6 +9,11 @@
             "Isaacdew\\LaravelFortifyMultitenancy\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Isaacdew\\LaravelFortifyMultitenancy\\Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "Isaac Dew",
@@ -17,7 +22,13 @@
     ],
     "minimum-stability": "dev",
     "require-dev": {
-        "orchestra/testbench": "8.0.x-dev"
+        "orchestra/testbench": "^7.4.0",
+        "laravel/fortify": "2.x-dev"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php ./vendor/bin/testbench package:discover --ansi"
+        ]
     },
     "extra": {
         "laravel": {
